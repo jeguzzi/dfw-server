@@ -1,0 +1,19 @@
+version: '2'
+services:
+  # xbee:
+  #   image: eduardoff/xbee_bridge
+  #   net: host
+  #   privileged: true
+  #   command: xbee_bridge --ip 127.0.0.1
+  control:
+    extends:
+      file: ../services/control/control.yml
+      service: control
+    env_file:
+      - ./mavros_0.env
+  mavros:
+    extends:
+      file: ../services/mavros_xbee/mavros.yml
+      service: mavros
+    env_file:
+      - ./mavros_0.env

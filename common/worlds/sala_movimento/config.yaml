@@ -1,0 +1,30 @@
+name: TestDF
+# reload: true
+map: map_pozyx2.xml
+reload: true
+cached: false
+drones:
+   - &d0
+      kind: rover
+      id: rover_0
+      xbee: r1
+controllers:
+   -
+      hostname: demo
+      position: [100, 100]
+      ip: 192.168.201.4
+   -
+      hostname: node21
+      position: [800, 100]
+      ip: 192.168.201.24
+      range: POLYGON ((0 0, 1000 0, 1000 600, 0 600, 0 0))
+   -
+      hostname: node22
+      position: [200, 800]
+      ip: 192.168.201.24
+      range: POLYGON ((0 400, 1000 400, 1000 1000, 0 1000, 0 400))
+# planners:
+#    rover:
+#       layer: 'L2'
+#       cache: True
+#       tol: 0.01

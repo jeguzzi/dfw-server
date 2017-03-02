@@ -1,0 +1,14 @@
+version: '2'
+services:
+  fanout:
+    network_mode: host
+    image: jeguzzi/df:mavros_merger
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+    command: roslaunch mavros_merger fanout.launch
+    env_file:
+      - ../../ros.env
+  mavproxy:
+    network_mode: host
+    image: jeguzzi/df:mavproxy
+    entrypoint: bin/bash -c "mavproxy.py --master=:$$out --out=:$$in --daemon"

@@ -1,0 +1,12 @@
+version: '2'
+services:
+  control:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./controller.launch:/root/catkin_ws/src/mav_control/launch/controller.launch:ro
+      - ./launch_controllers.py:/root/catkin_ws/src/mav_control/scripts/launch_controllers.py
+    command: rosrun mav_control launch_controllers.py _ns:=$HOSTNAME
+    env_file:
+      - ../ros.env

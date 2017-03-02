@@ -1,0 +1,11 @@
+version: '2'
+services:
+  control:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./controller.launch:/root/catkin_ws/src/mav_control/launch/controller.launch:ro
+    command: roslaunch mav_control controller.launch
+    env_file:
+      - ../../ros.env
