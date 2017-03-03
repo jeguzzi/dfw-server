@@ -61,3 +61,11 @@ services:
      - 9090:9090
     env_file:
       - ../ros.mac.env
+  planner:
+   #  network_mode: host
+    image: jeguzzi/df:ros_bridge
+    volumes:
+      - ../logs:/root/.ros/log:rw
+    command: roslaunch sync_df main.launch world_name:=TestDF
+    env_file:
+      - ../ros.mac.env
