@@ -64,6 +64,8 @@ services:
   planner:
     network_mode: host
     image: jeguzzi/df:ros_bridge
+    volumes_from:
+      - server
     volumes:
       - ../logs:/root/.ros/log:rw
     command: roslaunch sync_df main.launch world_name:=TestDF
