@@ -1,7 +1,7 @@
 name: TestDF
 # reload: true
 map: map_pozyx2.xml
-reload: true
+# reload: true
 cached: false
 drones:
    - &d0
