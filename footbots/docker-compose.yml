@@ -68,7 +68,8 @@ services:
       - server
     volumes:
       - ../logs:/root/.ros/log:rw
-    command: roslaunch sync_df main.launch world_name:=Footbots agent:=footbot
+      - ./planner.launch:/root/catkin_ws/src/mav_control/launch/planner.launch:ro
+    command: roslaunch sync_df planner.launch
     env_file:
       - ../ros.env
     environment:
