@@ -82,12 +82,20 @@ services:
     command: roslaunch mav_control controller.launch
     env_file:
       - ../ros.env
-  optitrack:
+  optitrack_odom:
     network_mode: host
     image: jeguzzi/ros:optitrack
     volumes:
       - ../logs:/root/.ros/log:rw
       - ./optitrack.launch:/root/catkin_ws/src/optitrack_odom/launch/optitrack.launch:ro
     command: roslaunch optitrack2odom optitrack.launch
+    env_file:
+      - ../ros.env
+  lcm:
+    network_mode: host
+    image: efeo/ros:optitrack_lcm_bridge
+    volumes:
+      - ../logs:/root/.ros/log:rw
+    command: roslaunch optitrack_lcm_bridge main.launch
     env_file:
       - ../ros.env
