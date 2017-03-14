@@ -24,12 +24,15 @@ drones:
    -
       kind: footbot
       id: footbot_32
+      color: green
    -
       kind: footbot
       id: footbot_51
+      color: yellow
    -
       kind: footbot
       id: footbot_53
+      color: cyan
    -
       kind: footbot
       id: footbot_55
@@ -43,6 +46,7 @@ drones:
    -
       kind: footbot
       id: footbot_60
+      color: magenta
    -
       kind: footbot
       id: footbot_65
