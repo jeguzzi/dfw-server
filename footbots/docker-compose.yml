@@ -68,7 +68,7 @@ services:
       - server
     volumes:
       - ../logs:/root/.ros/log:rw
-      - ./planner.launch:/root/catkin_ws/src/mav_control/launch/planner.launch:ro
+      - ./planner.launch:/root/catkin_ws/src/sync_df/launch/planner.launch:ro
     command: roslaunch sync_df planner.launch
     env_file:
       - ../ros.env
