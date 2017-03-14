@@ -99,3 +99,11 @@ services:
     command: roslaunch optitrack_lcm_bridge main.launch
     env_file:
       - ../ros.env
+  footbot_bridge:
+    network_mode: host
+    image: efeo/ros:footbot_control
+    volumes:
+      - ../logs:/root/.ros/log:rw
+    command: rosrun footbot_tools footbot_control.py _robots:=[55,66]
+    env_file:
+      - ../ros.env
