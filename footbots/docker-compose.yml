@@ -55,7 +55,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     command: roslaunch docker_ui monitor.launch
     environment:
-     - "ifaces=['en0', 'en5']"
+     - "ifaces=['en0']"
     ports:
      - 8085:8085
      - 9090:9090
