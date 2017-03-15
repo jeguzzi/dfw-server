@@ -1,6 +1,7 @@
 <launch>
   <node pkg="sync_df" type="sync_footbot_node.py" name="sync_node" output="screen">
      <param name='world_name' value='Footbots'/>
+     <param name="tol" value="0.1"/>
      <rosparam param="paths">
         footbot_32: L2S108,L2S66,...
         footbot_51: L2S108,L2S66,...
