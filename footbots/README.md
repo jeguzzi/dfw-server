@@ -89,4 +89,5 @@ You can also [visualize all tracked rigid bodies](http://192.168.201.4/worlds/Fo
 > docker-compose -f footbots/docker-compose.yml down
 ```
 or the [docker-compose GUI](http://192.168.201.4:5000)
+
 2. Switch off the footbots
