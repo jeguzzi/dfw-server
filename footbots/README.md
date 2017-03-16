@@ -77,9 +77,9 @@ or the [docker-compose GUI](http://192.168.201.4:5000)
 
 5. [Visualize the system](http://192.168.201.4:http://localhost:5000/worlds/Footbots/live?drone=footbot_66). You can highlight a robot's path, by appending the robot's id to the url.
 ```
-http://http://192.168.201.4/worlds/Footbots/live?drone=<footbot_id>
+http://192.168.201.4/worlds/Footbots/live?drone=<footbot_id>
 ```
-You can also [visualize all tracked rigid bodies](http://localhost:5000/worlds/Footbots/localization)
+You can also [visualize all tracked rigid bodies](http://192.168.201.4/worlds/Footbots/localization)
 
 
 ## Stopping
@@ -90,5 +90,3 @@ You can also [visualize all tracked rigid bodies](http://localhost:5000/worlds/F
 ```
 or the [docker-compose GUI](http://192.168.201.4:5000)
 2. Switch off the footbots
-
-## Video
