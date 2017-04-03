@@ -6,6 +6,6 @@
     <param name="min_distance" value="0.1"/>
     <param name="odom" value="mocap_odom"/>
     <param name="max_speed" value="0.5" />
-    <param name="track_s" value="true"/>
+    <param name="track_s" value="false"/>
   </node>
 </launch>

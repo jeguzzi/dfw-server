@@ -1,14 +1,10 @@
 version: '2'
 services:
-  fanout:
+ mavros:
     network_mode: host
-    image: jeguzzi/df:mavros_merger
-    volumes:
-      - ../../logs:/root/.ros/log:rw
-    command: roslaunch mavros_merger fanout.launch in=$in out=$out ns=$ns
+    image: jeguzzi/df:mav_control
     env_file:
       - ../../ros.env
-  mavproxy:
-    network_mode: host
-    image: jeguzzi/df:mavproxy
-    command: mavproxy.py --master=:$out --out=:$in --daemon
+    volumes:
+      - .../../logs:/root/.ros/log:rw
+    command: roslaunch mav_control mavros_xbee.launch

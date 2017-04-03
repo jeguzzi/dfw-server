@@ -5,7 +5,7 @@ services:
     image: jeguzzi/df:mavros_merger
     volumes:
       - ../logs:/root/.ros/log:rw
-    command: roslaunch mavros_merger main.launch drones:=false controllers:=false
+    command: roslaunch mavros_merger merger.launch drones:=false controllers:=false
     # i.e. take the param published from the df bridge
     env_file:
       - ../ros.env

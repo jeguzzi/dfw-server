@@ -9,8 +9,10 @@
     <node pkg="df_bridge" type="df_bridge.py" name="df_bridge" output="log"></node>
     <node if="$(eval arg('map') != False)" pkg="map_server" type="map_server" name="map_server" output="log" args="$(arg map)"></node>
 
-    <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
-    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge"></node>
+
+    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge">
+      <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
+    </node>
     <node if="$(arg pozyx)" pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="log">
         <rosparam param="topics">
            -
