@@ -10,9 +10,9 @@
       <param name="network" value="$(arg network)"/>
     </node>
     <node if="$(eval arg('map') != False)" pkg="map_server" type="map_server" name="map_server" output="screen" args="$(arg map)"></node>
-
-    <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
-    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge" output="screen"></node>
+    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge" output="screen">
+      <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
+    </node>
     <node if="$(arg pozyx)" pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="screen">
         <rosparam param="topics">
            -

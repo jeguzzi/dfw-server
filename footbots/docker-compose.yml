@@ -10,8 +10,8 @@ services:
   server:
     image: jeguzzi/df:server
     volumes:
-      - ./worlds:/app/worlds:ro
       - ./server.cfg:/app/config/server.cfg:ro
+      - ./worlds:/app/worlds:ro
     volumes_from:
      - redis
     depends_on:
@@ -43,7 +43,7 @@ services:
      - redis
     environment:
       - "PYTHONPATH=/app/src"
-    command: roslaunch df_bridge bridge.launch world:=/app/worlds/sala_movimento optitrack:=true pozyx:=true
+    command: roslaunch df_bridge bridge.launch world:=/app/worlds/footbots
     env_file:
       - ../ros.env
   monitor:
@@ -55,7 +55,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     command: roslaunch docker_ui monitor.launch
     environment:
-     - "ifaces=['en0', 'en5']"
+     - "ifaces=['en0']"
     ports:
      - 8085:8085
      - 9090:9090
@@ -68,8 +68,43 @@ services:
       - server
     volumes:
       - ../logs:/root/.ros/log:rw
-    command: roslaunch sync_df main.launch world_name:=TestDF
+      - ./planner.launch:/root/catkin_ws/src/sync_df/launch/planner.launch:ro
+    command: roslaunch sync_df planner.launch
     env_file:
       - ../ros.env
     environment:
       - "PYTHONPATH=/app/src"
+  control:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./controller.launch:/root/catkin_ws/src/mav_control/launch/controller.launch:ro
+    command: roslaunch mav_control controller.launch
+    env_file:
+      - ../ros.env
+  optitrack_odom:
+    network_mode: host
+    image: jeguzzi/ros:optitrack
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./optitrack.launch:/root/catkin_ws/src/optitrack_odom/launch/optitrack.launch:ro
+    command: roslaunch optitrack2odom optitrack.launch
+    env_file:
+      - ../ros.env
+  lcm:
+    network_mode: host
+    image: efeo/ros:optitrack_lcm_bridge
+    volumes:
+      - ../logs:/root/.ros/log:rw
+    command: roslaunch optitrack_lcm_bridge main.launch
+    env_file:
+      - ../ros.env
+  footbot_bridge:
+    network_mode: host
+    image: efeo/ros:footbot_control
+    volumes:
+      - ../logs:/root/.ros/log:rw
+    command: rosrun footbot_tools footbot_control.py _robots:=[32,51,53,55,60,66]
+    env_file:
+      - ../ros.env

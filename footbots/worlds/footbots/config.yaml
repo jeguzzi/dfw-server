@@ -1,0 +1,62 @@
+name: Footbots
+#reload: true
+map: map.xml
+cached: false
+drones:
+   -
+      kind: footbot
+      id: footbot_13
+   -
+      kind: footbot
+      id: footbot_14
+   -
+      kind: footbot
+      id: footbot_15
+   -
+      kind: footbot
+      id: footbot_27
+   -
+      kind: footbot
+      id: footbot_28
+   -
+      kind: footbot
+      id: footbot_30
+   -
+      kind: footbot
+      id: footbot_32
+      color: green
+   -
+      kind: footbot
+      id: footbot_51
+      color: yellow
+   -
+      kind: footbot
+      id: footbot_53
+      color: cyan
+   -
+      kind: footbot
+      id: footbot_55
+      color: red
+   -
+      kind: footbot
+      id: footbot_57
+   -
+      kind: footbot
+      id: footbot_58
+   -
+      kind: footbot
+      id: footbot_60
+      color: magenta
+   -
+      kind: footbot
+      id: footbot_65
+   -
+      kind: footbot
+      id: footbot_66
+      color: blue
+controllers:
+   -
+      hostname: demo
+      position: [100, 400]
+      ip: 192.168.201.4
+      range: POLYGON ((0 0, 1000 0, 1000 1000, 0 1000, 0 0))

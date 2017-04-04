@@ -1,0 +1,5 @@
+<launch>
+  <node name='filtered_optitrack' pkg='optitrack2odom' type='optitrack2odom' output="screen">
+    <param name="rate" value="5.0"/>
+  </node>
+</launch>
