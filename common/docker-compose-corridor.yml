@@ -36,14 +36,14 @@ services:
     image: jeguzzi/df:ros_bridge
     volumes:
       - ../logs:/root/.ros/log:rw
-      - ./bridge.launch:/root/catkin_ws/src/df_bridge/launch/bridge.launch:ro
+      - ./bridge-pozyx.launch:/root/catkin_ws/src/df_bridge/launch/bridge.launch:ro
     volumes_from:
      - server
     depends_on:
      - redis
     environment:
       - "PYTHONPATH=/app/src"
-    command: roslaunch df_bridge bridge.launch world:=/app/worlds/sala_movimento optitrack:=true pozyx:=true sync:=false network:=xbee
+    command: roslaunch df_bridge bridge.launch world:=/app/worlds/idsia_world optitrack:=false pozyx:=true sync:=false network:=xbee
     env_file:
       - ../ros.env
   monitor:
@@ -61,15 +61,3 @@ services:
      - 9090:9090
     env_file:
       - ../ros.env
-  planner:
-    network_mode: host
-    image: jeguzzi/df:ros_bridge
-    volumes_from:
-      - server
-    volumes:
-      - ../logs:/root/.ros/log:rw
-    command: roslaunch sync_df main.launch world_name:=TestDF
-    env_file:
-      - ../ros.env
-    environment:
-      - "PYTHONPATH=/app/src"
