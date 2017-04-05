@@ -1,6 +1,6 @@
 <launch>
     <!-- <arg name="ns" default="$(optenv HOSTNAME rover_0)"/> -->
-    <group ns="">
+    <group>
         <!-- <remap from="pose" to="pose"/> -->
         <node output="screen" pkg="pozyx_ros_driver" name="pozyx" type="pozyx.py" clear_params="true">
             <rosparam command="load" file="$(find pozyx_ros_driver)/launch/main.yaml"/>
