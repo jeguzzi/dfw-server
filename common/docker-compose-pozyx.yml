@@ -36,7 +36,7 @@ services:
     image: jeguzzi/df:ros_bridge
     volumes:
       - ../logs:/root/.ros/log:rw
-      - ./bridge.launch:/root/catkin_ws/src/df_bridge/launch/bridge.launch:ro
+      - ./bridge-pozyx.launch:/root/catkin_ws/src/df_bridge/launch/bridge.launch:ro
     volumes_from:
      - server
     depends_on:
