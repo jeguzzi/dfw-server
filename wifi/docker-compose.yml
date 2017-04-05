@@ -4,5 +4,4 @@ services:
     extends:
       file: ../services/control/control.yml
       service: control
-    environment:
-      - "ns=rover_0"
+      
