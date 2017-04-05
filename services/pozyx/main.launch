@@ -1,7 +1,7 @@
 <launch>
-    <arg name="ns" default="$(optenv HOSTNAME rover_0)"/>
-    <group ns="$(arg ns)">
-        <remap from="pose" to="mavros/mocap/pose"/>
+    <!-- <arg name="ns" default="$(optenv HOSTNAME rover_0)"/> -->
+    <group ns="">
+        <!-- <remap from="pose" to="pose"/> -->
         <node output="screen" pkg="pozyx_ros_driver" name="pozyx" type="pozyx.py" clear_params="true">
             <rosparam command="load" file="$(find pozyx_ros_driver)/launch/main.yaml"/>
             <param name="rate" value='10.0'/>
