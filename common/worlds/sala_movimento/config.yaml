@@ -22,8 +22,8 @@ controllers:
       position: [200, 800]
       ip: 192.168.201.24
       range: POLYGON ((0 400, 1000 400, 1000 1000, 0 1000, 0 400))
-# planners:
-#    rover:
-#       layer: 'L2'
-#       cache: True
-#       tol: 0.01
+planners:
+   rover:
+      layer: 'L2'
+      cache: True
+      tol: 0.01
