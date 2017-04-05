@@ -10,7 +10,7 @@ drones:
       xbee: r1
 controllers:
    -
-      hostname: ""
+      hostname: demo
       position: [100, 100]
       ip: 192.168.201.4
    -
@@ -36,3 +36,8 @@ anchors:
        - [0x602d, 9380, 9630, 2260]
        - [0x6024, 9612, 4049, 2000]
        - [0x6034, -250, 5890, 2600]
+optitrack:
+   crs:
+      y: 466.6
+      x: 537.3
+      alpha: 90
