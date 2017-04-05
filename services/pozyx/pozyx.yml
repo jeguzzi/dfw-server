@@ -1,0 +1,11 @@
+version: '2'
+services:
+  pozyx:
+    image: jeguzzi/df:pozyx
+    command: roslaunch pozyx_ros_driver main.launch rate:=5 continuous:=true
+    privileged: true
+    network_mode: host
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./main.yaml:/root/catkin_ws/src/pozyx_ros_driver/launch/main.yaml:ro
+      - ./main.launch:/root/catkin_ws/src/pozyx_ros_driver/launch/main.launch:ro
