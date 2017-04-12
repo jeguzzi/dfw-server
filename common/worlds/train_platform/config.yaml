@@ -1,0 +1,34 @@
+name: TrainPlatform
+# reload: true
+map: map.xml
+cached: false
+drones:
+   - &d0
+      kind: rover
+      id: rover_0
+      xbee: r1
+controllers:
+   -
+      hostname: demo
+      position: [0, 0]
+      ip: 192.168.201.4
+      range: POLYGON ((-3000 -3000, -3000 3000, 3000 3000, 3000 -3000, -3000 -3000))
+planners:
+   rover:
+      layer: 'L0'
+      cache: True
+      tol: 0.01
+anchors:
+   positions:
+      - [0x6031, -18330, -21950, 2000]
+      - [0x6034, 2280, -28450, 2000]
+      - [0x6024, 14330, 9600, 2000]
+      - [0x602c, 8170, -9450, 2000]
+      - [0x602d, -3610, 15100, 2000]
+      - [0x600c, -11610, -3170, 2000]
+map_image:
+   image: map.png
+   origin: [-42.7039, -71.21998169071371]
+   r_origin: [-42.7039, -71.21998169071371, 0.0]
+   resolution: 0.1361
+   size: [640, 1052]
