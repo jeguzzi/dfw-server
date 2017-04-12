@@ -2,7 +2,7 @@
   <node pkg="pozyx_ros_driver" type="uwb_configurator_ros.py" name="configure" output="screen">
     <rosparam param="uwb">
 channel: 1
-bitrate: 0x02 # 6810 bit/s
+bitrate: 0x02 # 110 Kbit/s
 prf: 0x02 # 64 Mhz
 plen: 0x04 # 64 bits
 gain_db: 32.0

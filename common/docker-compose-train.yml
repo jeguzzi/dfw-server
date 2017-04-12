@@ -71,7 +71,7 @@ services:
     volumes:
       - ../logs:/root/.ros/log:rw
       - ./planner.launch:/root/catkin_ws/src/sync_df/launch/planner.launch:ro
-      - ./paths.yml:/root/catkin_ws/src/sync_df/launch/paths.yml:ro
+      - ./paths.yaml:/root/catkin_ws/src/sync_df/launch/paths.yaml:ro
     command: roslaunch sync_df planner.launch world_name:=TrainPlatform
     env_file:
       - ../ros.env

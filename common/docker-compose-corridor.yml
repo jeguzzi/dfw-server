@@ -43,7 +43,7 @@ services:
      - redis
     environment:
       - "PYTHONPATH=/app/src"
-    command: roslaunch df_bridge bridge.launch world:=/app/worlds/idsia_world optitrack:=false pozyx:=true sync:=false network:=xbee
+    command: roslaunch df_bridge bridge.launch world:=/app/worlds/idsia_corridor optitrack:=false pozyx:=true sync:=false network:=xbee
     env_file:
       - ../ros.env
   monitor:
