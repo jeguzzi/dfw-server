@@ -1,0 +1,30 @@
+version: '2'
+services:
+  pozyx:
+    image: jeguzzi/df:pozyx
+    command: roslaunch pozyx_ros_driver main.launch rate:=5 continuous:=true
+    privileged: true
+    network_mode: host
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./main.yaml:/root/catkin_ws/src/pozyx_ros_driver/launch/main.yaml:ro
+      - ./main.launch:/root/catkin_ws/src/pozyx_ros_driver/launch/main.launch:ro
+  set_gain:
+    image: jeguzzi/df:pozyx
+    command: rosrun pozyx_ros_driver set_gain.py 32.0
+    privileged: true
+    network_mode: host
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+    env_file:
+      - ../../ros.env
+  configure:
+    image: jeguzzi/df:pozyx
+    command: roslaunch pozyx_ros_driver configure.launch
+    privileged: true
+    network_mode: host
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./configure.launch:/root/catkin_ws/src/pozyx_ros_driver/launch/configure.launch:ro
+    env_file:
+      - ../../ros.env

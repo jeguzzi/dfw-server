@@ -1,0 +1,19 @@
+<launch>
+
+    <arg name="world"/>
+    <arg name="map" default="$(find df_bridge)/map/map.yaml"/>
+    <arg name="optitrack" default="false"/>
+    <param name="world" value="$(arg world)"/>
+    <node if="$(eval arg('map') != False)" pkg="map_server" type="map_server" name="map_server" output="screen" args="$(arg map)"></node>
+    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge" output="screen">
+      <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
+    </node>
+    <node pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="screen">
+        <rosparam param="topics">
+           -
+             tag: 0x6075
+             name: pose
+             type: pose
+        </rosparam>
+    </node>
+</launch>

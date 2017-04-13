@@ -1,0 +1,10 @@
+<launch>
+  <arg name="world_name"/>
+  <arg name="agent" default="mav"/>
+  <arg name="tol" default="0.1"/>
+  <node pkg="sync_df" type="sync_$(arg agent)_node.py" name="sync_node" output="screen">
+     <param name='world_name' value='$(arg world_name)'/>
+     <param name="tol" value="$(arg tol)"/>
+     <rosparam command="load" file="$(find sync_df)/launch/paths.yaml"/>
+  </node>
+</launch>

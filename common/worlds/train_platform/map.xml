@@ -1,0 +1,1682 @@
+<?xml version='1.0'?>
+<?xml-stylesheet href='gml2svg14.xsl' type='text/xsl'?>
+<indoorCore:MultiLayeredGraph xmlns:indoorCore='http://www.opengis.net/indoorgml/1.0/core' xmlns:indoorNavi='http://www.opengis.net/indoorgml/1.0/navigation'
+      xmlns:alma='http://www.idsia.ch/alma' xmlns:gml='http://www.opengis.net/gml/3.2' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.opengis.net/indoorgml/1.0/core indoorgmlcore.xsd http://www.opengis.net/indoorgml/1.0/navigation indoorgmlnavi.xsd' gml:id='IndoorMap'>
+<gml:metaDataProperty><gml:GenericMetaData>
+<alma:crs><alma:translation><gml:pos>46.026397 8.920005</gml:pos></alma:translation><alma:rotation>0.0</alma:rotation></alma:crs>
+</gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:spaceLayers gml:id='SpaceLayers'>
+<indoorCore:spaceLayerMember>
+<indoorCore:SpaceLayer gml:id='L0'>
+<indoorCore:class>TOPOGRAPHIC</indoorCore:class>
+<indoorCore:usage>Navigation</indoorCore:usage>
+<indoorCore:nodes gml:id='L0N'>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S1'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C1'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C1P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-493.0 -1586.43 256.29 -1826.26 -40.1 -2752.23 -789.38 -2512.4 -493.0 -1586.43
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B1'>
+<indoorCore:duality xlink:href='#L0T1'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B1LS'>
+<gml:posList>
+-789.38 -2512.4 -493.0 -1586.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B2'>
+<indoorCore:duality xlink:href='#L0T2'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B2LS'>
+<gml:posList>
+-493.0 -1586.43 256.29 -1826.26
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B3'>
+<indoorCore:duality xlink:href='#L0T3'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B3LS'>
+<gml:posList>
+256.29 -1826.26 -40.1 -2752.23
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B4'>
+<indoorCore:duality xlink:href='#L0T4'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B4LS'>
+<gml:posList>
+-40.1 -2752.23 -789.38 -2512.4
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>15</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S1P'>
+<gml:pos>
+-266.55 -2169.33
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S2'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C2'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C2P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-1242.28 -1346.59 -493.0 -1586.43 -789.38 -2512.4 -1538.67 -2272.56 -1242.28 -1346.59
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B25'>
+<indoorCore:duality xlink:href='#L0T25'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B25LS'>
+<gml:posList>
+-1242.28 -1346.59 -1538.67 -2272.56
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B26'>
+<indoorCore:duality xlink:href='#L0T26'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B26LS'>
+<gml:posList>
+-1242.28 -1346.59 -493.0 -1586.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B1'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B11'>
+<indoorCore:duality xlink:href='#L0T11'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B11LS'>
+<gml:posList>
+-1538.67 -2272.56 -789.38 -2512.4
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>285</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S2P'>
+<gml:pos>
+-1015.83 -1929.5
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S3'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C3'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C3P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-186.41 -628.59 562.87 -868.43 256.29 -1826.26 -493.0 -1586.43 -186.41 -628.59
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B32'>
+<indoorCore:duality xlink:href='#L0T32'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B32LS'>
+<gml:posList>
+-493.0 -1586.43 -186.41 -628.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B33'>
+<indoorCore:duality xlink:href='#L0T33'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B33LS'>
+<gml:posList>
+-186.41 -628.59 562.87 -868.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B15'>
+<indoorCore:duality xlink:href='#L0T15'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B15LS'>
+<gml:posList>
+256.29 -1826.26 562.87 -868.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B2'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>60</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S3P'>
+<gml:pos>
+34.94 -1227.43
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S4'>
+<gml:metaDataProperty><gml:GenericMetaData><alma:nontraversable/></gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C4'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C4P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+1952.67 3473.57 2201.42 3393.95 2260.93 3374.9 268.16 -2850.9 -40.1 -2752.23 1952.67 3473.57
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B13'>
+<indoorCore:duality xlink:href='#L0T13'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B13LS'>
+<gml:posList>
+1470.84 1968.22 1952.67 3473.57
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B14'>
+<indoorCore:duality xlink:href='#L0T14'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B14LS'>
+<gml:posList>
+1952.67 3473.57 2201.42 3393.95 2260.93 3374.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B9'>
+<indoorCore:duality xlink:href='#L0T9'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B9LS'>
+<gml:posList>
+268.16 -2850.9 2260.93 3374.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B12'>
+<indoorCore:duality xlink:href='#L0T12'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B12LS'>
+<gml:posList>
+-40.1 -2752.23 268.16 -2850.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B3'/>
+<indoorCore:partialboundedBy xlink:href='#L0B15'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B16'>
+<indoorCore:duality xlink:href='#L0T16'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B16LS'>
+<gml:posList>
+562.87 -868.43 864.43 73.68
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B17'>
+<indoorCore:duality xlink:href='#L0T17'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B17LS'>
+<gml:posList>
+864.43 73.68 1174.08 1041.09
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B18'>
+<indoorCore:duality xlink:href='#L0T18'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B18LS'>
+<gml:posList>
+1174.08 1041.09 1470.84 1968.22
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S4P'>
+<gml:pos>
+1110.42 311.33
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S5'>
+<gml:metaDataProperty><gml:GenericMetaData><alma:nontraversable/></gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C5'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C5P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-396.93 -4928.78 -2554.71 -4305.47 -1865.14 -2168.07 268.16 -2850.9 -396.93 -4928.78
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B8'>
+<indoorCore:duality xlink:href='#L0T8'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B8LS'>
+<gml:posList>
+-1865.14 -2168.07 -2554.71 -4305.47 -396.93 -4928.78 268.16 -2850.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B10'>
+<indoorCore:duality xlink:href='#L0T10'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B10LS'>
+<gml:posList>
+-1865.14 -2168.07 -1538.67 -2272.56
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B11'/>
+<indoorCore:partialboundedBy xlink:href='#L0B4'/>
+<indoorCore:partialboundedBy xlink:href='#L0B12'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S5P'>
+<gml:pos>
+-1142.46 -3562.13
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S6'>
+<gml:metaDataProperty><gml:GenericMetaData><alma:nontraversable/></gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C6'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C6P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-3954.9 6513.18 3965.05 6513.18 3965.05 -6516.58 -3954.9 -6516.58 -3954.9 6513.18
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+<gml:interior>
+<gml:LinearRing>
+<gml:posList>
+2639.34 4557.13 1890.61 4931.06 998.2 3779.08 -32.57 2320.23 -1185.93 -62.81 -2554.71 -4305.47 -396.93 -4928.78 2639.34 4557.13
+</gml:posList>
+</gml:LinearRing>
+</gml:interior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorCore:CellSpaceBoundary gml:id='L0B5'>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B5LS'>
+<gml:posList>
+-3954.9 -6516.58 -3954.9 6513.18 3965.05 6513.18 3965.05 -6516.58 -3954.9 -6516.58
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorCore:CellSpaceBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B6'>
+<indoorCore:duality xlink:href='#L0T6'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B6LS'>
+<gml:posList>
+2260.93 3374.9 2639.34 4557.13 1890.61 4931.06 998.2 3779.08
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B7'>
+<indoorCore:duality xlink:href='#L0T7'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B7LS'>
+<gml:posList>
+998.2 3779.08 -32.57 2320.23 -1185.93 -62.81 -1865.14 -2168.07
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B8'/>
+<indoorCore:partialboundedBy xlink:href='#L0B9'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S6P'>
+<gml:pos>
+5.07 -1.7
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S7'>
+<gml:description>Exterior</gml:description>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S8'>
+<gml:metaDataProperty><gml:GenericMetaData><alma:nontraversable/></gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C8'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C8P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+1890.61 4931.06 2639.34 4557.13 2260.93 3374.9 2201.42 3393.95 998.2 3779.08 1890.61 4931.06
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B6'/>
+<indoorCore:partialboundedBy xlink:href='#L0B14'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B29'>
+<indoorCore:duality xlink:href='#L0T29'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B29LS'>
+<gml:posList>
+1621.1 3579.7 1952.67 3473.57
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B31'>
+<indoorCore:duality xlink:href='#L0T31'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B31LS'>
+<gml:posList>
+1289.52 3685.83 1621.1 3579.7
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B19'>
+<indoorCore:duality xlink:href='#L0T19'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B19LS'>
+<gml:posList>
+998.2 3779.08 1289.52 3685.83
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S8P'>
+<gml:pos>
+1914.2 4122.03
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S9'>
+<gml:metaDataProperty><gml:GenericMetaData><alma:nontraversable/></gml:GenericMetaData></gml:metaDataProperty>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C9'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C9P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+1289.52 3685.83 301.9 2199.55 -374.45 947.56 -889.65 -244.9 -1538.67 -2272.56 -1865.14 -2168.07 -1185.93 -62.81 -32.57 2320.23 998.2 3779.08 1289.52 3685.83
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B19'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B20'>
+<indoorCore:duality xlink:href='#L0T20'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B20LS'>
+<gml:posList>
+1289.52 3685.83 380.16 2317.32
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B21'>
+<indoorCore:duality xlink:href='#L0T21'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B21LS'>
+<gml:posList>
+380.16 2317.32 301.9 2199.55 -103.09 1449.89
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B22'>
+<indoorCore:duality xlink:href='#L0T22'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B22LS'>
+<gml:posList>
+-103.09 1449.89 -374.45 947.56 -555.63 528.21
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B23'>
+<indoorCore:duality xlink:href='#L0T23'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B23LS'>
+<gml:posList>
+-555.63 528.21 -889.65 -244.9 -935.7 -388.76
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B24'>
+<indoorCore:duality xlink:href='#L0T24'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B24LS'>
+<gml:posList>
+-935.7 -388.76 -1242.28 -1346.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B25'/>
+<indoorCore:partialboundedBy xlink:href='#L0B10'/>
+<indoorCore:partialboundedBy xlink:href='#L0B7'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S9P'>
+<gml:pos>
+-482.5 823.54
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S10'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C10'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C10P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+1470.84 1968.22 945.13 2136.49 1621.1 3579.7 1952.67 3473.57 1470.84 1968.22
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B13'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B27'>
+<indoorCore:duality xlink:href='#L0T27'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B27LS'>
+<gml:posList>
+1470.84 1968.22 945.13 2136.49
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B28'>
+<indoorCore:duality xlink:href='#L0T28'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B28LS'>
+<gml:posList>
+945.13 2136.49 1621.1 3579.7
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B29'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S10P'>
+<gml:pos>
+1475.58 2733.85
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S11'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C11'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C11P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+115.14 313.51 864.43 73.68 562.87 -868.43 -186.41 -628.59 115.14 313.51
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B36'>
+<indoorCore:duality xlink:href='#L0T36'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B36LS'>
+<gml:posList>
+115.14 313.51 -186.41 -628.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B37'>
+<indoorCore:duality xlink:href='#L0T37'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B37LS'>
+<gml:posList>
+115.14 313.51 864.43 73.68
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B16'/>
+<indoorCore:partialboundedBy xlink:href='#L0B33'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>60</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S11P'>
+<gml:pos>
+339.01 -277.46
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S12'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C12'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C12P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+166.62 474.33 528.81 1247.63 1174.08 1041.09 864.43 73.68 115.14 313.51 166.62 474.33
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B39'>
+<indoorCore:duality xlink:href='#L0T39'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B39LS'>
+<gml:posList>
+528.81 1247.63 166.62 474.33 115.14 313.51
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B40'>
+<indoorCore:duality xlink:href='#L0T40'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B40LS'>
+<gml:posList>
+528.81 1247.63 1174.08 1041.09
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B17'/>
+<indoorCore:partialboundedBy xlink:href='#L0B37'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>60</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S12P'>
+<gml:pos>
+661.27 657.42
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S13'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C13'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C13P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+945.13 2136.49 1470.84 1968.22 1174.08 1041.09 528.81 1247.63 945.13 2136.49
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B41'>
+<indoorCore:duality xlink:href='#L0T41'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B41LS'>
+<gml:posList>
+945.13 2136.49 528.81 1247.63
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B27'/>
+<indoorCore:partialboundedBy xlink:href='#L0B18'/>
+<indoorCore:partialboundedBy xlink:href='#L0B40'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>105</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S13P'>
+<gml:pos>
+1023.65 1582.9
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S14'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C14'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C14P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+945.13 2136.49 380.16 2317.32 1289.52 3685.83 1621.1 3579.7 945.13 2136.49
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B28'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B30'>
+<indoorCore:duality xlink:href='#L0T30'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B30LS'>
+<gml:posList>
+945.13 2136.49 380.16 2317.32
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorCore:partialboundedBy xlink:href='#L0B20'/>
+<indoorCore:partialboundedBy xlink:href='#L0B31'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage/>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S14P'>
+<gml:pos>
+1024.59 2868.84
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S15'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C15'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C15P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+301.9 2199.55 380.16 2317.32 945.13 2136.49 528.81 1247.63 -103.09 1449.89 301.9 2199.55
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B21'/>
+<indoorCore:partialboundedBy xlink:href='#L0B30'/>
+<indoorCore:partialboundedBy xlink:href='#L0B41'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B38'>
+<indoorCore:duality xlink:href='#L0T38'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B38LS'>
+<gml:posList>
+-103.09 1449.89 528.81 1247.63
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>195</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S15P'>
+<gml:pos>
+431.42 1781.51
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S16'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C16'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C16P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-374.45 947.56 -103.09 1449.89 528.81 1247.63 166.62 474.33 115.14 313.51 -555.63 528.21 -374.45 947.56
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B22'/>
+<indoorCore:partialboundedBy xlink:href='#L0B38'/>
+<indoorCore:partialboundedBy xlink:href='#L0B39'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B35'>
+<indoorCore:duality xlink:href='#L0T35'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B35LS'>
+<gml:posList>
+-555.63 528.21 115.14 313.51
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>240</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S16P'>
+<gml:pos>
+-15.03 884.42
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S17'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C17'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C17P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-889.65 -244.9 -555.63 528.21 115.14 313.51 -186.41 -628.59 -935.7 -388.76 -889.65 -244.9
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B23'/>
+<indoorCore:partialboundedBy xlink:href='#L0B35'/>
+<indoorCore:partialboundedBy xlink:href='#L0B36'/>
+<indoorCore:partialboundedBy>
+<indoorNavi:NavigableBoundary gml:id='L0B34'>
+<indoorCore:duality xlink:href='#L0T34'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L0B34LS'>
+<gml:posList>
+-935.7 -388.76 -186.41 -628.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorNavi:NavigableBoundary>
+</indoorCore:partialboundedBy>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>240</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S17P'>
+<gml:pos>
+-397.14 -52.33
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L0S18'>
+<indoorCore:duality>
+<indoorNavi:NavigableSpace gml:id='L0C18'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L0C18P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-935.7 -388.76 -186.41 -628.59 -493.0 -1586.43 -1242.28 -1346.59 -935.7 -388.76
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy xlink:href='#L0B24'/>
+<indoorCore:partialboundedBy xlink:href='#L0B34'/>
+<indoorCore:partialboundedBy xlink:href='#L0B32'/>
+<indoorCore:partialboundedBy xlink:href='#L0B26'/>
+<indoorNavi:class/>
+<indoorNavi:function/>
+<indoorNavi:usage>240</indoorNavi:usage>
+</indoorNavi:NavigableSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L0S18P'>
+<gml:pos>
+-714.35 -987.59
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+</indoorCore:nodes>
+<indoorCore:edges gml:id='L0E'>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T1'>
+<indoorCore:connects xlink:href='#L0S1'/>
+<indoorCore:connects xlink:href='#L0S2'/>
+<indoorCore:duality xlink:href='#L0B1'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T1LS'>
+<gml:posList>
+-266.55 -2169.33 -641.19 -2049.41 -1015.83 -1929.5
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T2'>
+<indoorCore:connects xlink:href='#L0S1'/>
+<indoorCore:connects xlink:href='#L0S3'/>
+<indoorCore:duality xlink:href='#L0B2'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T2LS'>
+<gml:posList>
+-266.55 -2169.33 -118.35 -1706.34 34.94 -1227.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T3'>
+<indoorCore:connects xlink:href='#L0S1'/>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:duality xlink:href='#L0B3'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T3LS'>
+<gml:posList>
+-266.55 -2169.33 108.1 -2289.24 1110.42 311.33
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T4'>
+<indoorCore:connects xlink:href='#L0S1'/>
+<indoorCore:connects xlink:href='#L0S5'/>
+<indoorCore:duality xlink:href='#L0B4'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T4LS'>
+<gml:posList>
+-266.55 -2169.33 -414.74 -2632.31 -1142.46 -3562.13
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T6'>
+<indoorCore:connects xlink:href='#L0S6'/>
+<indoorCore:connects xlink:href='#L0S8'/>
+<indoorCore:duality xlink:href='#L0B6'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T6LS'>
+<gml:posList>
+5.07 -1.7 1444.41 4355.07 1914.2 4122.03
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T7'>
+<indoorCore:connects xlink:href='#L0S6'/>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:duality xlink:href='#L0B7'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T7LS'>
+<gml:posList>
+5.07 -1.7 -952.25 471.32 -482.5 823.54
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T8'>
+<indoorCore:connects xlink:href='#L0S6'/>
+<indoorCore:connects xlink:href='#L0S5'/>
+<indoorCore:duality xlink:href='#L0B8'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T8LS'>
+<gml:posList>
+5.07 -1.7 -64.39 -3889.84 -1142.46 -3562.13
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T9'>
+<indoorCore:connects xlink:href='#L0S6'/>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:duality xlink:href='#L0B9'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T9LS'>
+<gml:posList>
+5.07 -1.7 1264.54 262.0 1110.42 311.33
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T10'>
+<indoorCore:connects xlink:href='#L0S5'/>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:duality xlink:href='#L0B10'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T10LS'>
+<gml:posList>
+-1142.46 -3562.13 -1701.9 -2220.32 -482.5 823.54
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T11'>
+<indoorCore:connects xlink:href='#L0S5'/>
+<indoorCore:connects xlink:href='#L0S2'/>
+<indoorCore:duality xlink:href='#L0B11'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T11LS'>
+<gml:posList>
+-1142.46 -3562.13 -1164.03 -2392.48 -1015.83 -1929.5
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T12'>
+<indoorCore:connects xlink:href='#L0S5'/>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:duality xlink:href='#L0B12'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T12LS'>
+<gml:posList>
+-1142.46 -3562.13 114.03 -2801.56 1110.42 311.33
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T13'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S10'/>
+<indoorCore:duality xlink:href='#L0B13'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T13LS'>
+<gml:posList>
+1110.42 311.33 1711.75 2720.89 1475.58 2733.85
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T14'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S8'/>
+<indoorCore:duality xlink:href='#L0B14'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T14LS'>
+<gml:posList>
+1110.42 311.33 2077.04 3433.76 1914.2 4122.03
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T15'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S3'/>
+<indoorCore:duality xlink:href='#L0B15'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T15LS'>
+<gml:posList>
+1110.42 311.33 409.58 -1347.34 34.94 -1227.43
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T16'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S11'/>
+<indoorCore:duality xlink:href='#L0B16'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T16LS'>
+<gml:posList>
+1110.42 311.33 713.65 -397.37 339.01 -277.46
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T17'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S12'/>
+<indoorCore:duality xlink:href='#L0B17'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T17LS'>
+<gml:posList>
+1110.42 311.33 1019.25 557.38 661.27 657.42
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T18'>
+<indoorCore:connects xlink:href='#L0S4'/>
+<indoorCore:connects xlink:href='#L0S13'/>
+<indoorCore:duality xlink:href='#L0B18'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T18LS'>
+<gml:posList>
+1110.42 311.33 1322.46 1504.65 1023.65 1582.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T19'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S8'/>
+<indoorCore:duality xlink:href='#L0B19'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T19LS'>
+<gml:posList>
+-482.5 823.54 1143.86 3732.45 1914.2 4122.03
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T20'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S14'/>
+<indoorCore:duality xlink:href='#L0B20'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T20LS'>
+<gml:posList>
+-482.5 823.54 834.84 3001.58 1024.59 2868.84
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T21'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S15'/>
+<indoorCore:duality xlink:href='#L0B21'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T21LS'>
+<gml:posList>
+-482.5 823.54 99.41 1824.72 431.42 1781.51
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T22'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S16'/>
+<indoorCore:duality xlink:href='#L0B22'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T22LS'>
+<gml:posList>
+-482.5 823.54 -465.04 737.89 -15.03 884.42
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T23'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S17'/>
+<indoorCore:duality xlink:href='#L0B23'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T23LS'>
+<gml:posList>
+-482.5 823.54 -722.64 141.66 -397.14 -52.33
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T24'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S18'/>
+<indoorCore:duality xlink:href='#L0B24'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T24LS'>
+<gml:posList>
+-482.5 823.54 -1088.99 -867.68 -714.35 -987.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T25'>
+<indoorCore:connects xlink:href='#L0S9'/>
+<indoorCore:connects xlink:href='#L0S2'/>
+<indoorCore:duality xlink:href='#L0B25'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T25LS'>
+<gml:posList>
+-482.5 823.54 -1390.47 -1809.58 -1015.83 -1929.5
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T26'>
+<indoorCore:connects xlink:href='#L0S2'/>
+<indoorCore:connects xlink:href='#L0S18'/>
+<indoorCore:duality xlink:href='#L0B26'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T26LS'>
+<gml:posList>
+-1015.83 -1929.5 -867.64 -1466.51 -714.35 -987.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T27'>
+<indoorCore:connects xlink:href='#L0S10'/>
+<indoorCore:connects xlink:href='#L0S13'/>
+<indoorCore:duality xlink:href='#L0B27'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T27LS'>
+<gml:posList>
+1475.58 2733.85 1207.98 2052.35 1023.65 1582.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T28'>
+<indoorCore:connects xlink:href='#L0S10'/>
+<indoorCore:connects xlink:href='#L0S14'/>
+<indoorCore:duality xlink:href='#L0B28'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T28LS'>
+<gml:posList>
+1475.58 2733.85 1283.11 2858.09 1024.59 2868.84
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T29'>
+<indoorCore:connects xlink:href='#L0S10'/>
+<indoorCore:connects xlink:href='#L0S8'/>
+<indoorCore:duality xlink:href='#L0B29'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T29LS'>
+<gml:posList>
+1475.58 2733.85 1786.88 3526.63 1914.2 4122.03
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T30'>
+<indoorCore:connects xlink:href='#L0S14'/>
+<indoorCore:connects xlink:href='#L0S15'/>
+<indoorCore:duality xlink:href='#L0B30'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T30LS'>
+<gml:posList>
+1024.59 2868.84 662.65 2226.91 431.42 1781.51
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T31'>
+<indoorCore:connects xlink:href='#L0S14'/>
+<indoorCore:connects xlink:href='#L0S8'/>
+<indoorCore:duality xlink:href='#L0B31'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T31LS'>
+<gml:posList>
+1024.59 2868.84 1455.31 3632.76 1914.2 4122.03
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T32'>
+<indoorCore:connects xlink:href='#L0S3'/>
+<indoorCore:connects xlink:href='#L0S18'/>
+<indoorCore:duality xlink:href='#L0B32'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T32LS'>
+<gml:posList>
+34.94 -1227.43 -339.7 -1107.51 -714.35 -987.59
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T33'>
+<indoorCore:connects xlink:href='#L0S3'/>
+<indoorCore:connects xlink:href='#L0S11'/>
+<indoorCore:duality xlink:href='#L0B33'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T33LS'>
+<gml:posList>
+34.94 -1227.43 188.23 -748.51 339.01 -277.46
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T34'>
+<indoorCore:connects xlink:href='#L0S18'/>
+<indoorCore:connects xlink:href='#L0S17'/>
+<indoorCore:duality xlink:href='#L0B34'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T34LS'>
+<gml:posList>
+-714.35 -987.59 -561.05 -508.68 -397.14 -52.33
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T35'>
+<indoorCore:connects xlink:href='#L0S17'/>
+<indoorCore:connects xlink:href='#L0S16'/>
+<indoorCore:duality xlink:href='#L0B35'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T35LS'>
+<gml:posList>
+-397.14 -52.33 -220.25 420.86 -15.03 884.42
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T36'>
+<indoorCore:connects xlink:href='#L0S17'/>
+<indoorCore:connects xlink:href='#L0S11'/>
+<indoorCore:duality xlink:href='#L0B36'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T36LS'>
+<gml:posList>
+-397.14 -52.33 -35.63 -157.54 339.01 -277.46
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T37'>
+<indoorCore:connects xlink:href='#L0S11'/>
+<indoorCore:connects xlink:href='#L0S12'/>
+<indoorCore:duality xlink:href='#L0B37'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T37LS'>
+<gml:posList>
+339.01 -277.46 489.78 193.59 661.27 657.42
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T38'>
+<indoorCore:connects xlink:href='#L0S16'/>
+<indoorCore:connects xlink:href='#L0S15'/>
+<indoorCore:duality xlink:href='#L0B38'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T38LS'>
+<gml:posList>
+-15.03 884.42 212.86 1348.76 431.42 1781.51
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T39'>
+<indoorCore:connects xlink:href='#L0S16'/>
+<indoorCore:connects xlink:href='#L0S12'/>
+<indoorCore:duality xlink:href='#L0B39'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T39LS'>
+<gml:posList>
+-15.03 884.42 347.71 860.98 661.27 657.42
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T40'>
+<indoorCore:connects xlink:href='#L0S12'/>
+<indoorCore:connects xlink:href='#L0S13'/>
+<indoorCore:duality xlink:href='#L0B40'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T40LS'>
+<gml:posList>
+661.27 657.42 851.44 1144.36 1023.65 1582.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L0T41'>
+<indoorCore:connects xlink:href='#L0S15'/>
+<indoorCore:connects xlink:href='#L0S13'/>
+<indoorCore:duality xlink:href='#L0B41'/>
+<indoorCore:geometry>
+<gml:LineString gml:id='L0T41LS'>
+<gml:posList>
+431.42 1781.51 736.97 1692.06 1023.65 1582.9
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+</indoorCore:edges>
+</indoorCore:SpaceLayer>
+</indoorCore:spaceLayerMember>
+<indoorCore:spaceLayerMember>
+<indoorCore:SpaceLayer gml:id='L1'>
+<indoorCore:class>SENSOR</indoorCore:class>
+<indoorCore:usage>Localization</indoorCore:usage>
+<indoorCore:nodes gml:id='L1N'>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L1S1'>
+<gml:name>Pozyx</gml:name>
+<indoorCore:duality>
+<indoorCore:CellSpace gml:id='L1C1'>
+<indoorCore:Geometry2D>
+<gml:Polygon gml:id='L1C1P'>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+-3954.9 6513.18 3965.05 6513.18 3965.05 -6516.58 -3954.9 -6516.58 -3954.9 6513.18
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</indoorCore:Geometry2D>
+<indoorCore:partialboundedBy>
+<indoorCore:CellSpaceBoundary gml:id='L1B1'>
+<indoorCore:duality xlink:href='#L1T1'/>
+<indoorCore:geometry2D>
+<gml:LineString gml:id='L1B1LS'>
+<gml:posList>
+-3954.9 -6516.58 -3954.9 6513.18 3965.05 6513.18 3965.05 -6516.58 -3954.9 -6516.58
+</gml:posList>
+</gml:LineString>
+</indoorCore:geometry2D>
+</indoorCore:CellSpaceBoundary>
+</indoorCore:partialboundedBy>
+</indoorCore:CellSpace>
+</indoorCore:duality>
+<indoorCore:geometry>
+<gml:Point srsDimension='2' gml:id='L1S1P'>
+<gml:pos>
+5.07 -1.7
+</gml:pos>
+</gml:Point>
+</indoorCore:geometry>
+</indoorCore:State>
+</indoorCore:stateMember>
+<indoorCore:stateMember>
+<indoorCore:State gml:id='L1S2'>
+<gml:description>Exterior</gml:description>
+</indoorCore:State>
+</indoorCore:stateMember>
+</indoorCore:nodes>
+<indoorCore:edges gml:id='L1E'>
+<indoorCore:transitionMember>
+<indoorCore:Transition gml:id='L1T1'>
+<indoorCore:connects xlink:href='#L1S1'/>
+<indoorCore:connects xlink:href='#L1S2'/>
+<indoorCore:duality xlink:href='#L1B1'/>
+</indoorCore:Transition>
+</indoorCore:transitionMember>
+</indoorCore:edges>
+</indoorCore:SpaceLayer>
+</indoorCore:spaceLayerMember>
+</indoorCore:spaceLayers>
+</indoorCore:MultiLayeredGraph>

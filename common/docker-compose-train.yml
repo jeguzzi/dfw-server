@@ -43,7 +43,7 @@ services:
      - redis
     environment:
       - "PYTHONPATH=/app/src"
-    command: roslaunch df_bridge bridge.launch world:=/app/worlds/idsia_corridor optitrack:=false pozyx:=true sync:=false network:=xbee
+    command: roslaunch df_bridge bridge.launch world:=/app/worlds/train_platform optitrack:=false pozyx:=true sync:=false network:=xbee
     env_file:
       - ../ros.env
   monitor:
@@ -55,9 +55,25 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     command: roslaunch docker_ui monitor.launch
     environment:
-     - "ifaces=['en0', 'en5']"
+     - "ifaces=[]"
     ports:
      - 8085:8085
      - 9090:9090
     env_file:
       - ../ros.env
+  planner:
+    network_mode: host
+    image: jeguzzi/df:ros_bridge
+    volumes_from:
+     - server
+    depends_on:
+     - redis
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./planner.launch:/root/catkin_ws/src/sync_df/launch/planner.launch:ro
+      - ./paths.yaml:/root/catkin_ws/src/sync_df/launch/paths.yaml:ro
+    command: roslaunch sync_df planner.launch world_name:=TrainPlatform
+    env_file:
+      - ../ros.env
+    environment:
+      - "PYTHONPATH=/app/src"
