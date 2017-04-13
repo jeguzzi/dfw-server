@@ -105,6 +105,6 @@ services:
     image: efeo/ros:footbot_control
     volumes:
       - ../logs:/root/.ros/log:rw
-    command: rosrun footbot_tools footbot_control.py _robots:=[32,51,53,55,60,66]
+    command: rosrun footbot_tools footbot_control.py _robots:=[32,57,53,55,60,66]
     env_file:
       - ../ros.env
