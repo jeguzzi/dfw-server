@@ -1,0 +1,30 @@
+<launch>
+
+    <arg name="world" default='Bebop'/>
+    <arg name="map" default="$(find df_bridge)/map/map.yaml"/>
+    <arg name="optitrack" default="true"/>
+    <arg name="pozyx" default="true"/>
+    <arg name="sync" default="false"/>
+
+    <param name="world" value="$(arg world)"/>
+    <node pkg="df_bridge" type="df_bridge.py" name="df_bridge" output="screen">
+      <param name="odom" value="mocap_odom"/>
+    </node>
+    <node if="$(eval arg('map') != False)" pkg="map_server" type="map_server" name="map_server" output="screen" args="$(arg map)"></node>
+
+    <remap from="rigid_bodies" to="optitrack/rigid_bodies"/>
+    <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge" output="screen">
+      <param name="max_rate" value="1.0"/>
+    </node>
+    <node if="$(arg pozyx)" pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="screen">
+        <rosparam param="topics">
+           -
+             tag: 0x6075
+             name: /pose
+             type: pose
+        </rosparam>
+    </node>
+    <!-- <node if="$(arg sync)" pkg="sync_df" type="sync_node.py" name="sync_node" output="log">
+      <param name="world_name" value="Footbots"/>
+    </node> -->
+</launch>

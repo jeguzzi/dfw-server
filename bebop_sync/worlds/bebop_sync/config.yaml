@@ -1,0 +1,37 @@
+name: BebopSync
+#reload: true
+map: map.xml
+cached: false
+drones:
+   -
+      kind: bebop
+      id: bebop
+      color: green
+      altitude: 1.5
+      plan_altitude: map
+   -
+      kind: bebop
+      id: head
+      color: red
+      altitude: 1.5
+      plan_altitude: map
+
+controllers:
+   -
+      hostname: demo
+      position: [100, 400]
+      ip: 192.168.201.4
+      range: POLYGON ((0 0, 1000 0, 1000 1000, 0 1000, 0 0))
+anchors:
+   positions:
+       - [0x602c, 1300, 9630, 1190]
+       - [0x6031, 1300, -270, 2630]
+       - [0x600c, 9380, -270, 2500]
+       - [0x602d, 9380, 9630, 2260]
+       - [0x6024, 9612, 4049, 2000]
+       - [0x6034, -250, 5890, 2600]
+optitrack:
+   crs:
+      y: 466.6
+      x: 537.3
+      alpha: 90
