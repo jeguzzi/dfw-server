@@ -17,15 +17,15 @@
     <node if="$(arg optitrack)" pkg="optitrack_df" type="optitrack_df_bridge.py" name="optitrack_bridge">
       <param name="max_rate" value="1.0"/>
     </node>
-    <!--<node if="$(arg pozyx)" pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="log">
+    <node if="$(arg pozyx)" pkg="pozyx_df" type="pozyx_df_bridge.py" name="pozyx_bridge" output="log">
         <rosparam param="topics">
            -
              tag: 0x6075
-             name: rover_0/mavros/mocap/pose
+             name: /pose
              type: pose
         </rosparam>
     </node>
-    <node if="$(arg sync)" pkg="sync_df" type="sync_node.py" name="sync_node" output="log">
+    <!-- <node if="$(arg sync)" pkg="sync_df" type="sync_node.py" name="sync_node" output="log">
       <param name="world_name" value="Footbots"/>
     </node> -->
 </launch>
