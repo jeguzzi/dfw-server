@@ -1,0 +1,12 @@
+version: '2'
+services:
+  control:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./test_copter.launch:/root/catkin_ws/src/mav_control/launch/test_copter.launch:ro
+      - ./test_copter.yml:/root/catkin_ws/src/mav_control/config/test_copter.yml:ro
+    command: roslaunch mav_control test_copter.launch
+    env_file:
+      - ../ros.env

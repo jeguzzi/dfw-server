@@ -4,5 +4,9 @@
     <param name="max_rate" value="5.0"/>
     <param name="odom" value="mavros/global_position/local"/>
     <param name="target" value="mavros/setpoint_raw/global"/>
+    <param name="ignore_yaw" value="True"/>
+    <param name="altitude_frame" value="terrain"/>
+    <param name="overwrite_altitude_target" value="True"/>
+    <param name="altitude_target" value="1.0"/>
   </node>
 </launch>

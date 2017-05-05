@@ -1,0 +1,72 @@
+version: '2'
+services:
+  redis:
+    image: redis
+    command: /redis.conf
+    volumes:
+      - /tmp
+      - ./redis.conf:/redis.conf:ro
+      - ./data:/data:rw
+  server:
+    image: jeguzzi/df:server
+    volumes:
+      - ./server.cfg:/app/config/server.cfg:ro
+      - ./worlds:/app/worlds:ro
+    volumes_from:
+     - redis
+    depends_on:
+     - redis
+    environment:
+      DF_FLASK_CONFIG: /app/config/server.cfg
+      PYTHONPATH : /app/src
+    entrypoint: ''
+    command: /bin/bash -c 'cd /app; gunicorn -w 1 -k gevent -b unix:/tmp/gunicorn.sock --timeout 900 --log-level DEBUG dronefly_flask_server:app'
+  nginx:
+    image: nginx
+    volumes:
+     - ./nginx.conf:/etc/nginx/nginx.conf
+    volumes_from:
+     - redis
+    depends_on:
+     - server
+    ports:
+    - "80:8000"
+  bridge:
+    network_mode: host
+    image: jeguzzi/df:ros_bridge
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./bridge.launch:/root/catkin_ws/src/df_bridge/launch/bridge.launch:ro
+    volumes_from:
+     - server
+    depends_on:
+     - redis
+    environment:
+      - "PYTHONPATH=/app/src"
+    command: roslaunch df_bridge bridge.launch world:=/app/worlds/bebop
+    env_file:
+      - ../ros.env
+  # monitor:
+  #   network_mode: host
+  #   privileged: true
+  #   image: jeguzzi/df:docker-ui
+  #   volumes:
+  #     - ../logs:/root/.ros/log:rw
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   command: roslaunch docker_ui monitor.launch
+  #   environment:
+  #    - "ifaces=[]"
+  #   ports:
+  #    - 8085:8085
+  #    - 9090:9090
+  #   env_file:
+  #     - ../ros.env
+  control:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../logs:/root/.ros/log:rw
+      - ./controller.launch:/root/catkin_ws/src/mav_control/launch/controller.launch:ro
+    command: roslaunch mav_control controller.launch
+    env_file:
+      - ../ros.env
