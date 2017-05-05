@@ -2,9 +2,9 @@
     <!-- <arg name="ns" default="$(optenv HOSTNAME rover_0)"/> -->
     <group>
         <!-- <remap from="pose" to="pose"/> -->
-        <node output="screen" pkg="pozyx_ros_driver" name="pozyx" type="pozyx.py" clear_params="true">
+        <node pkg="pozyx_ros_driver" name="pozyx" type="pozyx.py" clear_params="true" output="screen">
             <rosparam command="load" file="$(find pozyx_ros_driver)/launch/main.yaml"/>
-            <param name="rate" value='10.0'/>
+            <param name="rate" value='5.0'/>
             <param name="enable_position" value="true"/>
             <param name="enable_orientation" value="false"/>
             <param name="enable_sensors" value="false"/>
@@ -14,7 +14,7 @@
             <param name="magnetic_field_stddev" value="0.000002"/>
             <param name="orientation_stddev" value="0.001"/>
             <param name="debug" value="false"/>
-            <param name="continuous" value="false"/>
+            <param name="continuous" value="true"/>
         </node>
     </group>
 </launch>
