@@ -7,6 +7,10 @@ drones:
       kind: rover
       id: rover_0
       xbee: r1
+   - &d2
+      kind: quad
+      id: copter_0
+      xbee: r2
 controllers:
    -
       hostname: demo
