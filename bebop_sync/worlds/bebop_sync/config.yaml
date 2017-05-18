@@ -15,7 +15,6 @@ drones:
       color: red
       altitude: 1.5
       plan_altitude: map
-
 controllers:
    -
       hostname: demo
