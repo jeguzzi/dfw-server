@@ -2,9 +2,9 @@
 
     <arg name="world"/>
     <arg name="map" default="$(find df_bridge)/map/map.yaml"/>
-    <arg name="optitrack" default="false"/>
-    <arg name="pozyx" default="false"/>
-    <arg name="network" default="xbee"/>
+    <arg name="optitrack" default="true"/>
+    <arg name="pozyx" default="true"/>
+    <arg name="network" default="wifi"/>
     <param name="world" value="$(arg world)"/>
     <node pkg="df_bridge" type="df_bridge.py" name="df_bridge" output="screen">
       <param name="network" value="$(arg network)"/>
@@ -17,7 +17,11 @@
         <rosparam param="topics">
            -
              tag: 0x6075
-             name: rover_0/mavros/mocap/pose
+             name: rover_0/pozyx/pose
+             type: pose
+           -
+             tag: 0x6075
+             name: copter_0/pozyx/pose
              type: pose
         </rosparam>
     </node>

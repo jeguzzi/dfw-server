@@ -55,21 +55,21 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     command: roslaunch docker_ui monitor.launch
     environment:
-     - "ifaces=['en0', 'en5']"
+     - "ifaces=[]"
     ports:
      - 8085:8085
      - 9090:9090
     env_file:
       - ../ros.env
-  planner:
-    network_mode: host
-    image: jeguzzi/df:ros_bridge
-    volumes_from:
-      - server
-    volumes:
-      - ../logs:/root/.ros/log:rw
-    command: roslaunch sync_df main.launch world_name:=TestDF
-    env_file:
-      - ../ros.env
-    environment:
-      - "PYTHONPATH=/app/src"
+  # planner:
+  #   network_mode: host
+  #   image: jeguzzi/df:ros_bridge
+  #   volumes_from:
+  #     - server
+  #   volumes:
+  #     - ../logs:/root/.ros/log:rw
+  #   command: roslaunch sync_df main.launch world_name:=TestDF
+  #   env_file:
+  #     - ../ros.env
+  #   environment:
+  #     - "PYTHONPATH=/app/src"

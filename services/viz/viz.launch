@@ -5,6 +5,6 @@
       <param name="robot_description" command="$(find xacro)/xacro.py '$(find erle_models)/urdf/$(arg type).xacro'"/>
       <param name="tf_prefix" type="string" value="$(arg ns)"/>
       <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
-      <node pkg="erle_models" type="rotors.py" name="rotors"/>
+      <node pkg="erle_models" type="rotors.py" name="rotors" if="$(eval arg('type') == 'erlecopter'" />
    </group>
 </launch>
