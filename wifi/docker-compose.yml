@@ -4,4 +4,12 @@ services:
     extends:
       file: ../services/control/control.yml
       service: control
-      
+  viz:
+    extends:
+      file: ../services/viz/viz.yml
+      service: viz
+  viz-rover:
+    extends:
+      file: ../services/viz/viz.yml
+      service: viz
+      command: roslaunch erle_models viz.launch type:=rover ns:=rover_0

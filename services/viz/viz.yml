@@ -1,0 +1,11 @@
+version: '2'
+services:
+  viz:
+    network_mode: host
+    image: jeguzzi/df:mav_control
+    volumes:
+      - ../../logs:/root/.ros/log:rw
+      - ./viz.launch:/root/catkin_ws/src/erle_models/launch/viz.launch:ro
+    command: roslaunch erle_models viz.launch
+    env_file:
+      - ../../ros.env
