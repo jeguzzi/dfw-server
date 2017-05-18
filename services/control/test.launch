@@ -1,0 +1,11 @@
+<launch>
+    <arg name="ns" default="copter_0"/>
+    <group ns="$(arg ns)">
+        <node pkg="mav_control" type="test_mav.py" name="controller_test" output="screen">
+            <remap from="pose" to="mavros/mocap/pose"/>
+            <remap from="odom" to="mavros/mocap/odom"/>
+            <rosparam param='tests' command="load" file="$(find mav_control)/config/test.yml"/>
+        </node>
+        <!-- <node pkg="keyboard" type="keyboard" name="keyboard"/> -->
+    </group>
+</launch>
