@@ -9,4 +9,4 @@ services:
       - ./test_copter.yml:/root/catkin_ws/src/mav_control/config/test_copter.yml:ro
     command: roslaunch mav_control test_copter.launch
     env_file:
-      - ../ros.env
+      - ../../ros.env
