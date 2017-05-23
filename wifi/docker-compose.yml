@@ -12,4 +12,4 @@ services:
     extends:
       file: ../services/viz/viz.yml
       service: viz
-      command: roslaunch erle_models viz.launch type:=rover ns:=rover_0
+    command: roslaunch erle_models viz.launch type:=rover ns:=rover_0
