@@ -23,6 +23,14 @@
              tag: 0x6075
              name: copter_0/pozyx/pose
              type: pose
+           -
+             tag: 0x6F45
+             name: copter_1/pozyx/pose
+             type: pose
+           -
+             tag: 0x6044
+             name: copter_2/pozyx/pose
+             type: pose
         </rosparam>
     </node>
     <node if="$(arg sync)" pkg="sync_df" type="sync_node.py" name="sync_node" output="screen">
