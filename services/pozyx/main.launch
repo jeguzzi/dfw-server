@@ -5,7 +5,7 @@
   <arg name="enable_sensors" default="false"/>
   <arg name="rate" default="5.0"/>
   <arg name="debug" default="false"/>
-  <node pkg="pozyx_ros_driver" name="pozyx" type="pozyx.py" clear_params="true" required="true" output="screen">
+  <node pkg="pozyx_ros_driver" name="pozyx" type="pozyx_node.py" clear_params="true" required="true" output="screen">
     <rosparam command="load" file="$(find pozyx_ros_driver)/launch/main.yaml"/>
     <param name="rate" value="$(arg rate)"/>
     <param name="enable_position" value="$(arg enable_position)"/>
