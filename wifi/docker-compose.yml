@@ -6,16 +6,19 @@ services:
       service: control
   viz:
     extends:
-      file: ../services/viz/viz.yml ns:=copter_0
+      file: ../services/viz/viz.yml
       service: viz
+    command: roslaunch erle_models viz.launch ns:=copter_0
   viz1:
     extends:
-      file: ../services/viz/viz.yml ns:=copter_1
+      file: ../services/viz/viz.yml
       service: viz
+    command: roslaunch erle_models viz.launch ns:=copter_1
   viz2:
     extends:
-      file: ../services/viz/viz.yml ns:=copter_2
+      file: ../services/viz/viz.yml
       service: viz
+    command: roslaunch erle_models viz.launch ns:=copter_2
   viz-rover:
     extends:
       file: ../services/viz/viz.yml
