@@ -6,7 +6,15 @@ services:
       service: control
   viz:
     extends:
-      file: ../services/viz/viz.yml
+      file: ../services/viz/viz.yml ns:=copter_0
+      service: viz
+  viz1:
+    extends:
+      file: ../services/viz/viz.yml ns:=copter_1
+      service: viz
+  viz2:
+    extends:
+      file: ../services/viz/viz.yml ns:=copter_2
       service: viz
   viz-rover:
     extends:
