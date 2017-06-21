@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="sync_df" type="sync_mav_node.py" name="sync_node" output="screen">
+     <param name='world_name' value='Lodrino'/>
+     <param name="tol" value="0.5"/>
+     <rosparam param="paths">
+        bebop: ""
+     </rosparam>
+  </node>
+</launch>

@@ -1,0 +1,48 @@
+name: Lodrino
+map: map.xml
+cached: false
+reload: true
+drones:
+   - &d0
+      kind: rover
+      id: rover_0
+      xbee: r1
+   - &d1
+      kind: copter
+      id: copter_0
+      xbee: r2
+   - &d2
+      kind: copter
+      id: copter_1
+      xbee: r3
+   - &d3
+      kind: copter
+      id: copter_2
+      xbee: r4
+controllers:
+   -
+      hostname: demo
+      position: [0, 0]
+      range: POLYGON ((-100 300, -100 -4000, 3000 -4000, 3000 300, -100 300))
+      ip: 192.168.201.4
+planners:
+   copter:
+      layer: 'L0'
+      cache: True
+      tol: 0.01
+anchors:
+   positions:
+    - [1, 22358, 7836, 3000]
+    - [2, 0, 0, 3000]
+    - [3, 40435, -42485, 3000]
+    - [4, 17954, -50481, 3000]
+    - [5, 22358, 7836, 1500]
+    - [6, 0, 0, 1500]
+    - [7, 40435, -42485, 1500]
+    - [8, 17954, -50481, 1500]
+map_image:
+  image: map.png
+  origin: [-8.169409999999999, -56.48701238559779]
+  r_origin: [-8.169409999999999, -56.48701238559779, 0.0]
+  resolution: 0.0859
+  size: [640, 832]
