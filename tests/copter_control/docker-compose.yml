@@ -4,9 +4,14 @@ services:
     network_mode: host
     image: jeguzzi/df:mav_control
     volumes:
-      - ../../logs:/root/.ros/log:rw
+      - ../logs:/root/.ros/log:rw
       - ./test_copter.launch:/root/catkin_ws/src/mav_control/launch/test_copter.launch:ro
       - ./test_copter.yml:/root/catkin_ws/src/mav_control/config/test_copter.yml:ro
+      - /tmp/.X11-unix:/tmp/.X11-unix
     command: roslaunch mav_control test_copter.launch
     env_file:
       - ../../ros.env
+    privileged: true
+    environment:
+      - DISPLAY
+      - "QT_X11_NO_MITSHM=1"
